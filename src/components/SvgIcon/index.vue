@@ -26,15 +26,15 @@ const props = defineProps({
 
 const isExternal = computed(() => external(props.icon))
 const styleExternalIcon = computed(() => ({
-  mask: `url(${props.icon} no-repeat 50% 50%)`,
-  '-webkit-mask': `url(${props.icon} no-repeat 50% 50%)`
+  mask: `url(${props.icon}) no-repeat 50% 50%`,
+  '-webkit-mask': `url(${props.icon}) no-repeat 50% 50%`
 }))
 const iconName = computed(() => `#icon-${props.icon}`)
 </script>
 <style lang="scss" scoped>
 .svg-icon {
   width: 1em;
-  height: 3em;
+  height: 1em;
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
